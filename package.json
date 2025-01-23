@@ -12,6 +12,10 @@
     "TailwindCSS"
   ],
   "author": "Abdullah Balat",
+  "repository": {
+    "src": "git",
+    "url": "https://github.com/balatabdullah/Task-3.4-Countries.git"
+  },
   "license": "ISC",
   "description": "bu bir denemedir NPM",
   "devDependencies": {
