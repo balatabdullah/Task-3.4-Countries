@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Mulish;
+  src: url("../../public/assets/fonts/Mulish.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url("../../public/assets/fonts/Mulish-Italic.ttf");
+  font-style: italic;
+}
+
+th,
+td {
+  @apply text-left p-2 h-16;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "task-1.3-countries",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/styles/input.css -o ./public/css/output.css --watch",
+    "build": "babel src/scripts -d public/js"
+  },
+  "keywords": [
+    "NPM",
+    "Babel",
+    "TailwindCSS"
+  ],
+  "author": "Abdullah Balat",
+  "license": "ISC",
+  "description": "bu bir denemedir NPM",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.26.0",
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

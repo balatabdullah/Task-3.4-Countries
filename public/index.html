@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 3.4</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abdullah Balat" />
+    <meta name="description" content="I'm a country lister app." />
+    <meta
+      name="keywords"
+      content="HTML, CSS, TailwindCSS, Folder Structure, JavaScript, DOM, BOM, OOP, ModernJS, APIs, Npm, JSON"
+    />
+    <link rel="icon" href="./assets/images/icon.svg" type="image/svg-xml" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="m-0 p-0 box-border font-[mulish] text-gray-700">
+    <div
+      style="max-width: calc(1130px + 4vw)"
+      class="mx-auto flex flex-col flex-nowrap items-center w-full min-h-screen"
+    >
+      <header
+        class="flex flex-none flex-col flex-nowrap p-4 text-center tracking-wide w-full"
+      >
+        <a href="">
+          <i
+            class="fa-brands fa-canadian-maple-leaf my-4"
+            style="color: #50727b; font-size: 100px"
+          ></i>
+        </a>
+        <h1 class="my-2 font-semibold text-2xl">COUNTRY</h1>
+        <p>
+          You can get information about the country you live in and other
+          countries !
+        </p>
+      </header>
+      <hr class="w-11/12 text-gray-500 my-4" />
+      <main
+        class="flex flex-1 flex-col flex-nowrap gap-4 p-4 tracking-wide w-full items-center"
+      >
+        <section class="flex flex-row flex-nowrap gap-1 w-11/12">
+          <input
+            id="inputText"
+            class="flex flex-auto min-w-20 border border-gray-400 rounded-lg pl-4 hover:border-gray-500"
+            type="text"
+            autocomplete="off"
+            placeholder="The country is ..."
+          />
+          <button
+            id="searchBtn"
+            class="flex flex-none items-center justify-center w-10 h-10 p-[2px] border border-gray-400 rounded-lg hover:border-gray-500 active:border-gray-700 hover:text-gray-800 hover:cursor-pointer"
+          >
+            <i class="fa-solid fa-map-pin"></i>
+          </button>
+          <button
+            id="locBtn"
+            class="flex flex-none items-center justify-center w-10 h-10 p-[2px] border border-gray-400 rounded-lg hover:border-gray-500 active:border-gray-700 hover:text-gray-800 hover:cursor-pointer"
+          >
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </button>
+        </section>
+        <section
+          id="content"
+          class="hidden flex-shrink-0 flex-col gap-6 flex-nowrap w-11/12 sm:flex-row"
+        >
+          <div class="flex w-full p-2 sm:w-1/2">
+            <figure id="flag">
+              <img
+                class="border border-gray-400 rounded-2xl mb-4"
+                src=""
+                alt="flag"
+              />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div class="flex w-full sm:w-1/2">
+            <table id="desc">
+              <tr>
+                <th>Name:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Capital:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Population:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Native Language:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Currency:</th>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+      <hr class="w-11/12 text-gray-500 my-4" />
+      <footer
+        class="flex flex-none flex-col flex-nowrap p-4 text-center tracking-wide text-sm w-full"
+      >
+        <p>-- Created by <span class="font-semibold">Abdullah BALAT</span>--</p>
+        <p>
+          <span class="font-semibold">-- APIs</span> used are
+          <a
+            class="font-semibold"
+            target="_blank"
+            href="https://restcountries.com/"
+            >RestCountries</a
+          >
+          and
+          <a
+            class="font-semibold"
+            target="_blank"
+            href="https://opencagedata.com/"
+            >OpenCageData --</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
